@@ -1,0 +1,77 @@
+.nav-main {
+    background-color: var(--transparent-color);
+    border-radius: 10px;
+    height: 80px;
+}
+
+.nav-container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.nav-item::after {
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.5s;
+}
+
+.nav-label, .nav-input {
+    display: none;
+}
+
+.nav-item:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 769px) {
+    /* Aquí podrías agregar estilos específicos para pantallas más grandes si es necesario */
+}
+
+@media (width <= 768px) {
+    .nav-label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: var(--primary-color);
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav-input:checked + .nav-menu {
+        clip-path: circle(100% at center);
+    }
+}

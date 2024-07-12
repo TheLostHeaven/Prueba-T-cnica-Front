@@ -1,0 +1,142 @@
+span {
+    color: var(--secundary-color);
+    font-size: 3rem;
+}
+section {
+    margin-bottom: 5rem;
+}
+
+.p-home{ 
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 90%;
+    height: 50%;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10rem;
+}
+
+.home-img{
+    max-width: 90%;
+    max-height: 90vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+
+.section-description{
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 90%;
+    height: 50%;
+}
+
+.img2{
+    max-width: 90%;
+    max-height: 90vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;  
+}
+
+.section-service{
+    text-align: left;
+    font-size: 1rem;
+    margin: 2rem;
+    width: 90%;
+    height: 50%;
+    padding: 1rem;
+}
+
+.section-service h4{
+    padding: 1rem;
+}
+
+.img3{
+    max-width: 90%;
+    max-height: 90vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.section-feedback{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%; 
+}
+
+.section-feedback h3 {
+    text-align: center;
+}
+    
+
+
+@media (width >= 769px){
+    .title{
+        text-align: left;
+        margin: 5rem;
+    }
+    .p-home{
+        text-align: left;
+        margin: 5rem;
+        width: 40%;
+    }
+
+    .home-img{
+        text-align: right;
+        margin: -20rem 1rem 1rem 40rem;
+    }
+
+    .section-description{
+        width: 40%;
+        margin: 10rem 0 10rem 44rem;
+    }
+    
+    .img2{
+        display: flex;
+        justify-content: flex-start;
+        margin: -20rem 1rem 5rem 5rem;
+    }
+
+    .section-service{
+        display: flex;
+        width: 40%;
+    }
+    .section-service h4{
+        padding: 1rem;
+    }
+
+    .img3{
+        text-align: right;
+        margin: 1rem -45rem 1rem 1rem;
+    }
+
+    .section-feedback h3 {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+
+    .card-client{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
