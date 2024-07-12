@@ -44,9 +44,8 @@
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/* Media queries para pantallas más grandes */
 @media (min-width: 769px) {
-    /* Aquí podrías agregar estilos específicos para pantallas más grandes si es necesario */
+
 }
 
 @media (width <= 768px) {
@@ -59,7 +58,7 @@
         position: fixed;
         top: 80px;
         bottom: 0;
-        background: var(--primary-color);
+        background: var(--background-color);
         width: 100%;
         left: 0;
         right: 0;
