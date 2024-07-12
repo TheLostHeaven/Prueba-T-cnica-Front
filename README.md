@@ -17,7 +17,8 @@ Este proyecto es un Landing page sobre una empresa de ciberseguridad aplicando b
 ![image](https://github.com/user-attachments/assets/a8961043-7c92-46c2-b3c2-7e3105f61d33)
 
 ## Estructura de carpetas
-![image](https://github.com/user-attachments/assets/7e2f1108-5b97-40a3-ad41-c939c6093d45)
+![image](https://github.com/user-attachments/assets/43368472-d225-450d-bcd2-37684560ed88)
+
 
 
 ## Funcionalidades
